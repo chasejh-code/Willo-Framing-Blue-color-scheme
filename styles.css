@@ -296,7 +296,7 @@ footer {
 
 @media (max-width: 768px) {
   .logo {
-    transform: translateX(15px); /* adjust 10–25px depending on taste */
+    transform: translateX(25px); /* adjust 10–25px depending on taste */
   }
 }
   /* ----- GLOBAL ----- */
