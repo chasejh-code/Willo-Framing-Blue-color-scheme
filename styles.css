@@ -295,7 +295,10 @@ footer {
 /* ===================== MOBILE FIXES ===================== */
 
 @media (max-width: 768px) {
-
+  .logo {
+    transform: translateX(15px); /* adjust 10–25px depending on taste */
+  }
+}
   /* ----- GLOBAL ----- */
   body {
     overflow-x: hidden;
