@@ -326,7 +326,7 @@ footer {
     position: relative;
     z-index: 2;
     order: 1;
-    transform: translateX(20px);
+    transform: none;
     max-width: 80%;
     display: block; /* helps with centering */
   }
