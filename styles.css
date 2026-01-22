@@ -317,7 +317,7 @@ footer {
 @media (max-width: 768px) {
 
   .logo-wrap {
-    transform: translateX(10px);
+    transform: translateX(15px);
   }
 
   .logo {
