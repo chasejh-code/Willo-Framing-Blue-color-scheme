@@ -8,13 +8,13 @@ document.addEventListener("DOMContentLoaded", () => {
   
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-  
+      //run google reCAPTCHA v3
       grecaptcha.ready(() => {
         grecaptcha.execute("6LfQXVgsAAAAABCptEp_JfL1BajZmJ5iq3kPSHSf", { action: "submit" })
           .then(token => {
   
             document.getElementById("g-recaptcha-response").value = token;
-  
+            // submit form
             fetch(form.action, {
               method: "POST",
               body: new FormData(form)
@@ -22,7 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
               .then(res => res.json())
               .then(data => {
                 if (data.success) {
+                  //show popup
                   popup.style.display = "flex";
+                  //reset form
                   form.reset();
   
                   // Auto-close after 4 seconds
