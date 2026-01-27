@@ -5,18 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Willo Framing LLC</title>
 
-  <!-- Stylesheet -->
+  <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
 
   <!-- Lottie -->
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
+  <!-- Google reCAPTCHA v3 -->
+  <script src="https://www.google.com/recaptcha/api.js?render=YOUR_RECAPTCHA_SITE_KEY"></script>
+
+  <!-- Your JS -->
+  <script defer src="javascript/form.js"></script>
+  <script defer src="javascript/scripts.js"></script>
 </head>
 
 <body>
 
   <!-- ================= HEADER ================= -->
-   
   <header class="fade-up">
     <lottie-player
       src="https://lottie.host/831aa83a-8ff5-4427-b0c0-a79d7ab3e231/uG06lOmlpG.json"
@@ -26,11 +31,12 @@
       autoplay
       class="header-lottie"
     ></lottie-player>
+
     <div class="logo-wrap">
-    <img src="logo.png" alt="Willo Framing LLC Logo" class="logo" >
+      <img src="logo.png" alt="Willo Framing LLC Logo" class="logo" />
     </div>
   </header>
-  
+
   <!-- ================= CAROUSEL ================= -->
   <section class="carousel fade-up">
     <div class="carousel-track">
@@ -46,24 +52,27 @@
       <img src="pic3.jpg" alt="Project 3 duplicate" />
       <img src="pic4.jpg" alt="Project 4 duplicate" />
       <img src="pic5.jpg" alt="Project 5 duplicate" />
-      
     </div>
   </section>
 
-  <!-- ================= SPLIT SECTION ================= -->
+  <!-- ================= ABOUT SECTION ================= -->
   <section class="split-section fade-up">
     <div class="text-side">
-      <h1>About us</h1>
+      <h1>About Us</h1>
       <h3>Building the Foundation of Your Vision</h3>
+
       <p>
-        - At Willo Framing LLC, we believe that every great structure starts with a solid frame. 
-        With years of hands-on experience in the construction industry, we specialize strictly 
+        - At Willo Framing LLC, we believe that every great structure starts with a solid frame.
+        With years of hands-on experience in the construction industry, we specialize strictly
         in the "bones" of the build: <b>Houses</b>, <b>Townhouses</b>, and <b>Custom Decks</b>.
       </p>
+
       <p>
-        - We aren't a "jack-of-all-trades" company. We are dedicated framing specialists. 
-        By focusing on our expertise on structural integrity, we ensure that every project we touch is square, level, and built to stand the test of time. 
-        Whether it's a single-family home or a multi-unit townhouse development, our team brings precision and professional craftsmanship to every job site.
+        - We aren't a "jack-of-all-trades" company. We are dedicated framing specialists.
+        By focusing our expertise on structural integrity, we ensure that every project we touch
+        is square, level, and built to stand the test of time. Whether it's a single-family home
+        or a multi-unit townhouse development, our team brings precision and professional craftsmanship
+        to every job site.
       </p>
     </div>
 
@@ -79,68 +88,92 @@
     </div>
   </section>
 
-   <!-- ================= WHY CHOOSE US ================= --> 
+  <!-- ================= WHY CHOOSE US ================= -->
   <section class="centered-section fade-up">
     <h1>Why Choose Us</h1>
-    <h2><i>Precision You Can Trust. Professionalism You Can Count On</i>.</h2>
+    <h2><i>Precision You Can Trust. Professionalism You Can Count On.</i></h2>
+
     <ul>
-      <li><span class="custom-underline"><b>Fully licensed & Insured:</b></span> Your property and your investment are protected.We carry full licensing and comprehensive insurance, giving you total peace of mind from the first nail to the last</li>
-      <li><span class="custom-underline"><b>Framing specialists:</b></span> We don't get distracted by finishes or flooring.WE focus 100% on structural framing for houses, townhouses, and decks, ensuring the highest level of expertise in the industry.</li>
-      <li><span class="custom-underline"><b>The "No-Guesswork" special:</b></span> We don't do "ballpark" estimates over the phone. We come to you for a <b>FREE In-Person Onsite Qoute.</b></li>
+      <li>
+        <span class="custom-underline"><b>Fully Licensed & Insured:</b></span>
+        Your property and investment are protected. We carry full licensing and comprehensive insurance,
+        giving you peace of mind from the first nail to the last.
+      </li>
+
+      <li>
+        <span class="custom-underline"><b>Framing Specialists:</b></span>
+        We don't get distracted by finishes or flooring. We focus 100% on structural framing for houses,
+        townhouses, and decks — ensuring the highest level of expertise in the industry.
+      </li>
+
+      <li>
+        <span class="custom-underline"><b>The "No-Guesswork" Special:</b></span>
+        We don't do ballpark estimates over the phone. We come to you for a
+        <b>FREE In-Person Onsite Quote.</b>
+      </li>
+
       <ul>
-        <li><b>We Measure:</b> We take exact dimensions of the site.</li>
-        <li><b>We Document:</b> We take photograghs to identify potential challenges early.</li>
-        <li><b>Fast Turnaround:</b> You'll Recieve a detailed, transparent quote within 48 hours to 2 weeks depending on the size of the project</li>
+        <li><b>We Measure:</b> Exact dimensions of the site.</li>
+        <li><b>We Document:</b> Photographs to identify potential challenges early.</li>
+        <li><b>Fast Turnaround:</b> Detailed, transparent quote within 48 hours to 2 weeks depending on project size.</li>
       </ul>
     </ul>
   </section>
-
   <!-- ================= SPANISH SECTION ================= -->
   <section class="spanish-section fade-up">
     <p><strong><u>Hablamos Español!</u></strong></p>
   </section>
-
   <!-- ================= FOOTER ================= -->
   <footer class="fade-up">
+
+    <!-- Contact Info -->
     <div class="footer-column contact-info">
-      <h2><strong><b>Contact The Owner</b></strong></h2>
+      <h2><b>Contact The Owner</b></h2>
       <p><b><u>Name</u></b>: Justin Garcia</p>
       <p><b><u>Email</u></b>: Willoframing@gmail.com</p>
       <p><b><u>Phone</u></b>: (404) 642-2683</p>
-      <p><b><u>Hours</u></b>: Mon-Sat, 8am–7pm</p>
-      <p><u><b>Closed on Sunday</u></b></p>
+      <p><b><u>Hours</u></b>: Mon–Sat, 8am–7pm</p>
+      <p><b><u>Closed on Sunday</u></b></p>
       <p><b><u>Licensed & Insured</u></b></p>
     </div>
 
+    <!-- Animation -->
     <div class="footer-column footer-animation">
       <lottie-player
         src="https://lottie.host/93b4aea6-f8aa-4e3f-aa70-14fb595c58c5/q6tA9jkHcy.json"
         background="transparent"
         speed="1"
         loop
-        autoplay
-        style
+        autoplay 
       ></lottie-player>
     </div>
 
-    <form class="footer-column contact-form">
+    <!-- Contact Form (Web3Forms Ready) -->
+    <form
+      id="contact-form"
+      class="footer-column contact-form"
+      action="https://api.web3forms.com/submit"
+      method="POST"
+      >
       <h2>Leave Your Info</h2>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <input type="tel" placeholder="Your Phone" required />
-      <textarea placeholder="Briefly describe your project..." required></textarea>
+
+    <!--web3form-->
+      <input type="hidden" name="access_key" value="1cfd9dee-17c3-4e78-b6e7-eae3ad355b97" />
+      <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response" />
+
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="tel" name="phone" placeholder="Your Phone" required />
+      <textarea name="message" placeholder="Describe your project..." required></textarea>
+
       <button type="submit">Submit</button>
     </form>
   </footer>
-
+  
   <!-- ================= LIGHTBOX ================= -->
   <div id="lightbox" class="lightbox">
     <span class="close">&times;</span>
     <img class="lightbox-img" id="lightbox-img" />
   </div>
-
-  <!-- ================= SCRIPTS ================= -->
-  <script src="scripts.js"></script>  
-  
 </body>
 </html>
