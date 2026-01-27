@@ -140,43 +140,7 @@
   </div>
 
   <!-- ================= SCRIPTS ================= -->
-  <script>
-    /* Lightbox functionality */
-    const images = document.querySelectorAll('.carousel-track img');
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    const closeBtn = document.querySelector('.lightbox .close');
-
-    images.forEach(img => {
-      img.addEventListener('click', () => {
-        lightbox.style.display = 'flex';
-        lightboxImg.src = img.src;
-      });
-    });
-
-    closeBtn.addEventListener('click', () => {
-      lightbox.style.display = 'none';
-    });
-
-    lightbox.addEventListener('click', (e) => {
-      if (e.target === lightbox) {
-        lightbox.style.display = 'none';
-      }
-    });
-
-    /* Fade-up scroll animations */
-    const faders = document.querySelectorAll(".fade-up");
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      });
-    });
-
-    faders.forEach(el => observer.observe(el));
-  </script>
-
+  <script src="scripts.js"></script>  
+  
 </body>
 </html>
